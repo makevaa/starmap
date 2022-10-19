@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>starmap</title>
+		
+        <link media="screen" href="css/style.css" type="text/css" rel="stylesheet"/> 	
+
+        <link id="favicon" rel="shortcut icon" href="favicon.ico" type="image/png" />	
+
+
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->	
+        <meta name="viewport" content="width=device-width, initial-scale=1">	
+        <script src="https://kit.fontawesome.com/5ed908a148.js" crossorigin="anonymous"></script>
+    </head>
+
+    
+    <body>
+
+        <div id="pause-label">PAUSED</div>
+
+        <div id="menu-container">
+            <div id="menu"> 
+                <div id="title"></div>
+                <div id="text"></div>
+                <button id='start'></button>
+                <!--<div id="checker-test"></div>-->
+            </div>
+        </div>
+
+
+        <div id="sidebar">
+            <div id="money"></div>
+            <div id="menu-buttons"></div>
+            <div id='content-elems'>
+                
+                <div class="menu-content" id='selected'>
+
+                    <div id="tile-buildings"></div>
+
+                    <div class="help">
+                        No building selected,<br>
+                        click buildings on map to select
+                    </div>
+
+                    <div class="info">
+                        <div class="title"></div>
+                        <div class="flavor-name"></div>
+                        <div class="image">
+                            <div class="level"></div>
+                        </div>
+                        <div class="stats">
+                            <div class="level">Level: <span class="stat"></span></div>
+                            <div class="weapon">Weapon: <span class="name"></span></div>
+                            <div class="range">Range: <span class="stat"></span></div>
+                            <div class="damage">Damage: <span class="stat"></span></div>
+                            <div class="fire-rate">Fire rate: <span class="stat"></span></div>
+                        
+                            <div class="blast-radius">
+                                Blast radius:
+                                <span class="stat">
+                                </span>
+                            </div>
+
+                            <div class="blast-damage">
+                                Blast damage:
+                                <span class="stat">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="upgrade">Upgrade</div>
+                </div>
+
+                <div class="menu-content" id='build'>
+                    <!--<div class="title">Build menu</div>-->
+                   
+                    <div id="building-list"></div>
+
+                    <div id="building-info">
+                        <div class="title">-</div>
+                        <div class="image"></div>
+
+
+                        <div class="stats">
+
+                            <div class="weapon">
+                                Weapon:
+                                <span class="name"></span>
+                            </div>
+
+                            <div class="range">
+                                Range: 
+                                <span class="stat"></span>
+                            </div>
+
+                            <div class="damage">
+                                Damage: 
+                                <span class="stat"></span>
+                            </div>
+
+                            <div class="fire-rate">
+                                Fire rate: 
+                                <span class="stat"></span>
+                            </div>
+
+                            <div class="build-time">
+                                Build time: 
+                                <span class="stat"></span>
+                            </div>
+                          
+                        </div>
+
+
+                        <div class="desc"></div>
+                     
+                       
+                    </div>
+
+                    <!--<div id="build-button">
+                        <i class="icon fa-solid fa-gear"></i>
+                        Build
+                    </div>-->
+                </div>
+
+                <div class="menu-content" id='overview'>
+                    <div class="title">Overview</div>
+                    
+                  
+                </div>
+            </div>
+
+            
+        </div>
+        
+
+        <div id='canvas-container'>
+            <canvas id='canvas' class="canvas"></canvas>
+        </div>
+
+   
+
+        <script src="bezier/utils.js"></script>
+        <script src="bezier/bezier.js"></script>
+        <script src="bezier/poly-bezier.js"></script>
+
+
+        <script src="settings.js"></script>
+        <script src="genTools.js"></script>
+        <script src="util.js"></script>
+        <script src="img.js"></script>
+        <script src="names.js"></script>
+        <script src="color.js"></script>
+        <script src="draw.js"></script>
+        <script src="mouse.js"></script>
+        <script src="controls.js"></script>
+        <script src="bg.js"></script>
+        
+        <script src="index.js"></script>
+        <script src="init.js"></script>
+     
+    </body>
+</html>
